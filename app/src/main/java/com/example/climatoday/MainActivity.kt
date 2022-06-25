@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.temp_min).text = tempMin
                 findViewById<TextView>(R.id.temp_max).text = tempMax
                 findViewById<TextView>(R.id.sunrise).text =
-                    SimpleDateFormat("hh:mm a", Locale.).format(Date(sunrise * 1000))
+                    SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunrise * 1000))
                 findViewById<TextView>(R.id.sunset).text =
                     SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunset * 1000))
                 findViewById<TextView>(R.id.wind).text = windSpeed
