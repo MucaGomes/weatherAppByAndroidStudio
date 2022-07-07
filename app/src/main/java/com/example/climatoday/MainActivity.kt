@@ -1,7 +1,6 @@
 package com.example.climatoday
 
 import android.annotation.SuppressLint
-import android.net.wifi.rtt.CivicLocationKeys.CITY
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.View
@@ -11,7 +10,6 @@ import org.json.JSONObject
 import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.*
-import android.widget.EditText as EditText1
 
 val API: String = "77cc11404020d9911e38f90435b7745b\n"
 var CITY: String = "Sao Paulo"
@@ -22,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.result_second_screen)
 
         weatherTask().execute()
 

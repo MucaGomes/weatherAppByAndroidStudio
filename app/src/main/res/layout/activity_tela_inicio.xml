@@ -20,7 +20,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="-100dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/icone_weather"
+            android:src="@drawable/nuvem"
             />
 
         <LinearLayout
@@ -31,9 +31,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Infromações retiradas da API online de Open Weather Map"
+                android:text="Info taken from a public API online: https://openweathermap.org/api"
                 android:layout_gravity="center"
-                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textSize="18sp"
                 android:layout_marginTop="150dp" />
 
         </LinearLayout>
@@ -51,7 +52,7 @@
 
         <EditText
             android:id="@+id/cidade_digitada"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_background"
             android:hint="Digite a Cidade"
